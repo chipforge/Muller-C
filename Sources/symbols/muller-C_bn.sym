@@ -1,0 +1,23 @@
+v {xschem version=3.0.0 file_version=1.2 }
+G {type=subcircuit
+vhdl_stop=true verilog_stop=true
+format="@name @pinlist @VDD @GND @symname Wmin=@Wmin Lmin=@Lmin g=@g m=@m"
+template="name=x1 VDD=VDD GND=GND Wmin=1.5u Lmin=1u g=2 m=1"
+generic_type="VDD=string GND=string"
+extra="VDD GND"}
+V {}
+S {}
+E {}
+L 4 -60 40 -25 17.5 {}
+L 4 30 0 60 0 {}
+L 4 -60 -40 -34 -24 {}
+B 5 -62.5 37.5 -57.5 42.5 {name=A dir=in}
+B 5 -62.5 -42.5 -57.5 -37.5 {name=XXX
+dir=inout}
+B 5 57.5 -2.5 62.5 2.5 {name=XXX
+dir=inout}
+A 4 0 0 30 270 360 {}
+A 4 -29.5 -20 5 0 360 {}
+T {C} -10 -20 0 0 1 1 {}
+T {@name} -23.75 -5 0 0 0.2 0.2 {}
+T {@symname} -20 -45 0 0 0.2 0.2 {}
